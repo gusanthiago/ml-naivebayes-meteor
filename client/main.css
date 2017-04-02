@@ -1,0 +1,28 @@
+/**
+ * Style da pagina principal
+ */
+
+body {
+    font-family: "Khmer OS System";
+}
+header, footer{
+    background-color: #1565c0;
+}
+header > img {
+    width: 300px;
+    position: relative;
+    display: block;
+    margin: 10px auto;
+}
+footer {
+    height: 70px;
+}
+button {
+    margin: 25px;
+    margin-bottom: 30px;
+}
+.bayes-img {
+    margin-top:30px;
+    width:400px;
+    position: relative;
+}

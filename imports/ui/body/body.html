@@ -1,0 +1,32 @@
+<template name="bodyapp">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="container">
+            <h1 class="text-center ">ML</h1>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <h2 class="text-info">TEOREMA NAIVE BAYES</h2>
+                <div>
+                    <img src="bayes.jpg" class="img-responsive bayes-img img-thumbnail">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <h2 class="text-info">CLASSIFICAÇÃO</h2>
+                <div class="form-group">
+                    <label>Modelos de classificação</label>
+                    <textarea id="classifier" class="form-control"></textarea>
+                    <button class="btn btn-default" id="language" type="submit">Linguagem</button>
+                    <button class="btn btn-warning" id="spam" type="submit">Spam ?</button>
+                    <button class="btn btn-primary" id="satisfaction" type="submit">Satisfação</button>
+                </div>
+                <div class="form-group">
+                    <label>Label</label>
+                    <input type="text" class="form-control" id="resultLabel" disabled>
+                </div>
+                <div class="form-group">
+                    <label>Probabilidade de acerto</label>
+                    <input type="text" class="form-control" id="resultProb" disabled>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>
