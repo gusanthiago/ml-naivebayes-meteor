@@ -15,3 +15,4 @@ Executando aplicação.
 ```bash
 meteor
 ```
+![Aplicação](https://raw.githubusercontent.com/gusanthiago/ml-naivebayes-meteor/master/public/sample.png)
