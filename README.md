@@ -2,11 +2,12 @@
 
 ### Apresentação
 
-Apresentação - [Prezi](https://prezi.com/0ai4pkdj6qdj/machine-learning/)
+[Prezi](https://prezi.com/0ai4pkdj6qdj/machine-learning/)
 
 ### Aplicação
 
-Instalando dependencias.
+Instalando dependências.
+
 ```bash
 meteor npm install
 ```
