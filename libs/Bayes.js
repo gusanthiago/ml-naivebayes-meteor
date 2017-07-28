@@ -110,7 +110,7 @@ class Bayes {
 	stemInverseLabelCount(stem, label) {
 		let labels = this.getLabels(),
 			total = 0;
-		for (var i = 0, length = labels.length; i < length; i++) {
+		for (let i = 0, length = labels.length; i < length; i++) {
 			if (labels[i] === label)
 				continue;
 			total += parseInt(this.stemLabelCount(stem, labels[i]));
@@ -146,9 +146,9 @@ class Bayes {
 	 * @returns {number}
 	 */
 	docInverseCount(label) {
-		var labels = this.getLabels(),
+		let labels = this.getLabels(),
 			total = 0;
-		for (var i = 0, length = labels.length; i < length; i++) {
+		for (let i = 0, length = labels.length; i < length; i++) {
 			if (labels[i] === label)
 				continue;
 			total += parseInt(this.docCount(labels[i]));
@@ -162,7 +162,7 @@ class Bayes {
 	 * @returns {number}
 	 */
 	increment(key) {
-		var count = parseInt(localStorage.getItem(key));
+		let count = parseInt(localStorage.getItem(key));
 		if (!count) count = 0;
 		localStorage.setItem(key, parseInt(count) + 1);
 		return count + 1;
@@ -215,14 +215,14 @@ class Bayes {
 			labelProbability = {},
 			probLabel = 0;
 
-		for (var j = 0; j < labels.length; j++) {
+		for (let j = 0; j < labels.length; j++) {
 			let label = labels[j];
 			docCounts[label] = this.docCount(label);
 			docInverseCounts[label] = this.docInverseCount(label);
 			totalDocCount += parseInt(docCounts[label]);
 		}
 
-		for (var j = 0; j < labels.length; j++) {
+		for (let j = 0; j < labels.length; j++) {
 			let label = labels[j],
 				logSum = 0;
 			labelProbability[label] = docCounts[label] / totalDocCount;
