@@ -1,6 +1,7 @@
 /**
  * @author Gustavo Santos <gusanthiagodv@gmail.com>
  * @description Efetuar teorema bayesiano com palavras
+ * @see http://burakkanber.com/blog/machine-learning-naive-bayes-1/
  */
 class Bayes {
 
@@ -271,6 +272,5 @@ class Bayes {
 
 }
 
-
-// Exportando modulo
+// Export NaiveBayes 
 export const NaiveBayes = new Bayes();
