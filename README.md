@@ -1,9 +1,3 @@
-
-
-### Apresentação
-
-[Prezi](https://prezi.com/0ai4pkdj6qdj/machine-learning/)
-
 ### Aplicação
 
 Instalando dependências.
